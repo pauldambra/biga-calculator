@@ -9,6 +9,7 @@
 </script>
 
 <main>
+    <h1>Biga Calculator</h1>
     <p>I keep having to jump around in <a href="https://www.youtube.com/watch?v=V2RCYjVhb9w">a video on how to make
         biga</a> and then figure out ingredients</p>
     <p>Obviously I need to automate this!</p>
