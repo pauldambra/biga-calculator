@@ -33,9 +33,15 @@
     {#if bigaCalculation && bigaCalculation.stepOne}
         <div>
             <h1>First Step</h1>
-            <strong>Grams of water:</strong> {bigaCalculation.stepOne.gramsOfWater}<br/>
-            <strong>Grams of yeast:</strong> {bigaCalculation.stepOne.gramsOfYeast}<br/>
-            <strong>Grams of honey:</strong> {bigaCalculation.stepOne.gramsOfHoney}<br/>
+            <ul>
+                <li>Add <strong>{bigaCalculation.startingFlour} grams of flour</strong> to the container</li>
+                <li>Add <strong>{bigaCalculation.stepOne.gramsOfYeast} grams of yeast</strong></li>
+                <li>Shake to mix</li>
+                <li>mix the <strong>{bigaCalculation.stepOne.gramsOfHoney} grams of honey</strong> into the <strong>{bigaCalculation.stepOne.gramsOfWater} grams of water</strong></li>
+                <li>add the water to the flour, shaking to mix</li>
+                <li>keep shaking until it forms straccetti</li>
+                <li>leave at room temperature for 5 hours and then in the fridge for up to 2 days</li>
+            </ul>
         </div>
     {/if}
     {#if bigaCalculation && bigaCalculation.stepTwo}

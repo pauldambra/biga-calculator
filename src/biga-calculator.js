@@ -27,14 +27,13 @@
  */
 module.exports.bigaFor = (gramsOfFlour) => {
   return {
+    startingFlour: gramsOfFlour,
     stepOne: {
-      startingFlour: gramsOfFlour,
       gramsOfWater: Math.floor(gramsOfFlour * 0.50),
       gramsOfYeast: +((gramsOfFlour * 0.0083).toFixed(1)),
       gramsOfHoney: +((gramsOfFlour * 0.0083).toFixed(1))
     },
     stepTwo: {
-      startingFlour: gramsOfFlour,
       gramsOfWater: Math.floor(gramsOfFlour * 0.167),
       gramsOfSalt: Math.floor(gramsOfFlour * 0.025),
       teaspoonsOfOliveOil: Math.floor(gramsOfFlour * 0.0017)
