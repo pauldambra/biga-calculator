@@ -40,16 +40,22 @@
                 <li>mix the <strong>{bigaCalculation.stepOne.gramsOfHoney} grams of honey</strong> into the <strong>{bigaCalculation.stepOne.gramsOfWater} grams of water</strong></li>
                 <li>add the water to the flour, shaking to mix</li>
                 <li>keep shaking until it forms straccetti</li>
-                <li>leave at room temperature for 5 hours and then in the fridge for up to 2 days</li>
+                <li>leave at room temperature for 2 to 5 hours and then in the fridge for up to 2 days</li>
             </ul>
         </div>
     {/if}
     {#if bigaCalculation && bigaCalculation.stepTwo}
         <div>
             <h1>Second Step</h1>
-            <strong>Grams of water:</strong> {bigaCalculation.stepTwo.gramsOfWater}<br/>
-            <strong>Grams of salt:</strong> {bigaCalculation.stepTwo.gramsOfSalt}<br/>
-            <strong>Teaspoons of olive oil:</strong> {bigaCalculation.stepTwo.teaspoonsOfOliveOil}<br/>
+            <ul>
+                <li>take out of the fridge</li>
+                <li>leave at room temperature for an hour</li>
+                <li>add <strong>{bigaCalculation.stepTwo.gramsOfWater} grams of water</strong></li>
+                <li>add <strong>{bigaCalculation.stepTwo.gramsOfSalt} grams of salt</strong></li>
+                <li>add <strong>{bigaCalculation.stepTwo.teaspoonsOfOliveOil} teaspoons of extra virgin olive oil</strong></li>
+                <li>knead and the rest for 1 hour</li>
+                <li>form balls and rest for 1 hours</li>
+            </ul>
         </div>
     {/if}
 </main>
