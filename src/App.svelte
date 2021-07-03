@@ -12,7 +12,7 @@
     }
 
     main {
-        @apply container;
+        @apply container px-4;
     }
 
     ul {
