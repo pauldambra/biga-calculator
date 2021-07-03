@@ -1,3 +1,7 @@
+<svelte:head>
+    <base href="$BASE_URL$">
+</svelte:head>
+
 <script>
     let gramsOfFlour;
     let bigaCalculation;

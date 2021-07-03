@@ -48,6 +48,14 @@ module.exports = {
 				resolve: {
 					fullySpecified: false
 				}
+			},
+			{
+				test: /App\.svelte$/,
+				loader: 'string-replace-loader',
+				options: {
+					search: '$BASE_URL$',
+					replace: prod ? '/biga-calculator/' : '/',
+				}
 			}
 		]
 	},
