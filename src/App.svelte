@@ -38,13 +38,24 @@
 </svelte:head>
 
 <script>
-    let gramsOfFlour;
-    let bigaCalculation;
+
+
+    let gramsOfFlour
+    let bigaCalculation
     const {bigaFor} = require('./biga-calculator')
 
     const flourChanged = () => {
         bigaCalculation = bigaFor(gramsOfFlour)
     }
+
+    import { onMount } from 'svelte';
+    onMount(async () => {
+        const urlParams = new URLSearchParams(window.location.search)
+        if (urlParams.has("gramsOfFlour")) {
+            gramsOfFlour = urlParams.get("gramsOfFlour")
+            flourChanged()
+        }
+    });
 </script>
 
 <main>

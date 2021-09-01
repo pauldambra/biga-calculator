@@ -26,6 +26,10 @@
  *  - https://www.youtube.com/watch?v=V2RCYjVhb9w&t=1448s
  */
 module.exports.bigaFor = (gramsOfFlour) => {
+  if (!Number.isInteger(parseInt(gramsOfFlour, 10))) {
+    return
+  }
+
   return {
     startingFlour: gramsOfFlour,
     stepOne: {

@@ -8,6 +8,12 @@ const randomNumber = (min = 1, max = 5000) => {
 }
 
 describe('The biga calculator', () => {
+  it('returns nothing if not given a number', () => {
+    expect(bigaFor('')).to.be.undefined
+    expect(bigaFor('tomat')).to.be.undefined
+    expect(bigaFor(null)).to.be.undefined
+  })
+
   describe('step 2', () => {
     it('matches Vito Locapelli\'s video', () => {
       const result = bigaFor(600)
